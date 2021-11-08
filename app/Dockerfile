@@ -5,5 +5,5 @@ RUN apk add --update nodejs npm
 WORKDIR /app
 COPY . .
 RUN npm install -g npm@8.1.3
-RUN npm install --production
+RUN npm install 
 CMD ["node", "src/index.js"]
